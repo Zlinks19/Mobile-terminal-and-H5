@@ -1,0 +1,22 @@
+// 定义全局正则表达式
+export const max50 = 50; //最多50个字符
+export const max100 = 100; //最多100个字符
+export const max300 = 300; //最多300个字符
+export const max500 = 500; //最多500个字符
+export const regPhone = /^(13[0-9]|14[1579]|15[0-3,5-9]|16[6]|17[0123456789]|18[0-9]|19[89])\d{8}$/; //手机号码
+export const sixNum = /^\d{6}$/ //6位数字
+export const regNum = /^\d+$/; //只能输入数字，不为空
+export const regLetNum = /^[0-9a-zA-Z]*$/; //只能输入字母或者数字
+export const regCn = /^[\u4e00-\u9fa5]+$/; //中文，不为空
+export const regQQ = /[1-9][0-9]{4,}/; //QQ
+export const regReq = /\S/; //不能为空
+export const regMoney = /(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/; //金额，可以输入0，最多两位小数
+export const regCardNo = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; //身份证
+export const regPswd = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/; //验证密码6-20
+export const regName = /^[a-zA-Z0-9]*([a-zA-Z][0-9]|[0-9][a-zA-Z])[a-zA-Z0-9]*$/; //同时包含字母和数字,不能有特殊符号
+export const regWord = /^[A-Za-z0-9\u4e00-\u9fa5]+$/; //只能输入字母数字汉字
+export const regEmoji = /(\ud83c[\udf00-\udfff])|(\ud83d[\udc00-\ude4f])|(\ud83d[\ude80-\udeff])/; //不能能输入表情
+export const regSfz = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/; //验证身份证号
+export const regBank = /^([1-9]{1})(\d{15}|\d{18})$/; //验证银行卡号
+export const regcPswd = /^\d{6}$/; //6位数字
+export const regXym = /[1-9A-GY]{1}[1239]{1}[1-5]{1}[0-9]{5}[0-9A-Z]{10}/; //社会信用代码
